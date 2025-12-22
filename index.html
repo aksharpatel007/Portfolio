@@ -443,10 +443,10 @@
         let phraseIndex = 0, charIndex = 0, isDeleting = false;
         function type() {
             const currentPhrase = phrases[phraseIndex];
-            if (isDeleting) { textElement.textContent = currentPhrase.substring(0, charIndex - 1); charIndex--; } 
+            if (isDeleting) { textElement.textContent = currentPhrase.substring(0, charIndex - 1); charIndex--; }
             else { textElement.textContent = currentPhrase.substring(0, charIndex + 1); charIndex++; }
             let typeSpeed = isDeleting ? 40 : 80;
-            if (!isDeleting && charIndex === currentPhrase.length) { isDeleting = true; typeSpeed = 2000; } 
+            if (!isDeleting && charIndex === currentPhrase.length) { isDeleting = true; typeSpeed = 2000; }
             else if (isDeleting && charIndex === 0) { isDeleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; typeSpeed = 500; }
             setTimeout(type, typeSpeed);
         }
@@ -495,7 +495,7 @@
             // IMPORTANT: PASTE YOUR FORMSPREE ID BELOW
             // Example: const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqkrpzv';
             // -----------------------------------------------------------------
-            const FORMSPREE_ENDPOINT = 'https://formspree.io/f/PASTE_YOUR_FORMSPREE_ID_HERE'; 
+            const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwverzpq'; 
 
             if (FORMSPREE_ENDPOINT.includes('PASTE_YOUR')) {
                 alert('ERROR: You forgot to paste your Formspree ID in the index.html code!');
