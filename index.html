@@ -104,8 +104,6 @@
             outline: none;
         }
         .custom-input::placeholder { color: var(--text-secondary); opacity: 0.7; }
-        .carousel-indicators { bottom: -50px; }
-        .carousel-indicators button { background-color: var(--accent-main) !important; height: 4px !important; border-radius: 2px; }
         .project-link { text-decoration: none; color: var(--text-primary); font-weight: 600; transition: color 0.3s; }
         .project-link:hover { color: var(--accent-main); }
         .btn-glow {
@@ -261,114 +259,111 @@
             <div class="text-center">
                 <h2 class="section-title">Featured Work</h2>
             </div>
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
-                </div>
-                <div class="carousel-inner pb-5">
-                    <div class="carousel-item active">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fas fa-robot fa-2x text-info"></i>
-                                            <span class="badge bg-primary">AI/Python</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">Swastik AI Assistant</h4>
-                                        <p class="text-secondary">An advanced AI assistant leveraging Python to perform smart tasks and automation.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/Swastik-AI-Assistant" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fas fa-robot fa-2x text-info"></i>
+                                <span class="badge bg-primary">AI/Python</span>
                             </div>
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fas fa-bus fa-2x text-warning"></i>
-                                            <span class="badge bg-warning text-dark">Smart City</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">MoveSmart</h4>
-                                        <p class="text-secondary">A smart bus management solution designed to optimize urban transportation and routes.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/MoveSmart" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fas fa-university fa-2x text-success"></i>
-                                            <span class="badge bg-success">Full Stack</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">Student Portal</h4>
-                                        <p class="text-secondary">A web portal for college students to collaborate and manage academic resources.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/college-student-portal" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                            <h4 class="fw-bold text-white">Swastik AI Assistant</h4>
+                            <p class="text-secondary">An advanced AI assistant leveraging Python to perform smart tasks and automation.</p>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fab fa-bootstrap fa-2x text-white"></i>
-                                            <span class="badge bg-light text-dark">UI/UX</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">Bootstrap 5 Showcase</h4>
-                                        <p class="text-secondary">Responsive layouts and components.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/bootstrap-5" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fas fa-gamepad fa-2x text-danger"></i>
-                                            <span class="badge bg-danger">Game</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">Tic-Tac-Toe</h4>
-                                        <p class="text-secondary">A classic game implementation.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/TIC-TOC_TOE-GAME" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-                                <div class="glass-card w-100 d-flex flex-column p-4">
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-start mb-3">
-                                            <i class="fas fa-calculator fa-2x text-info"></i>
-                                            <span class="badge bg-info text-dark">Utility</span>
-                                        </div>
-                                        <h4 class="fw-bold text-white">Web Calculator</h4>
-                                        <p class="text-secondary">A functional web-based calculator.</p>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <a href="https://github.com/aksharpatel007/calculator" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/Swastik-AI-Assistant" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fas fa-bus fa-2x text-warning"></i>
+                                <span class="badge bg-warning text-dark">Smart City</span>
+                            </div>
+                            <h4 class="fw-bold text-white">MoveSmart</h4>
+                            <p class="text-secondary">A smart bus management solution designed to optimize urban transportation and routes.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/MoveSmart" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fas fa-university fa-2x text-success"></i>
+                                <span class="badge bg-success">Full Stack</span>
+                            </div>
+                            <h4 class="fw-bold text-white">Student Portal</h4>
+                            <p class="text-secondary">A web portal for college students to collaborate and manage academic resources.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/college-student-portal" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fab fa-bootstrap fa-2x text-white"></i>
+                                <span class="badge bg-light text-dark">UI/UX</span>
+                            </div>
+                            <h4 class="fw-bold text-white">Bootstrap 5 Showcase</h4>
+                            <p class="text-secondary">Responsive layouts and components built with the latest Bootstrap framework.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/bootstrap-5" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fas fa-gamepad fa-2x text-danger"></i>
+                                <span class="badge bg-danger">Game</span>
+                            </div>
+                            <h4 class="fw-bold text-white">Tic-Tac-Toe</h4>
+                            <p class="text-secondary">A classic game implementation using JavaScript logic and DOM manipulation.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/TIC-TOC_TOE-GAME" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                    <div class="glass-card w-100 d-flex flex-column p-4">
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="fas fa-calculator fa-2x text-info"></i>
+                                <span class="badge bg-info text-dark">Utility</span>
+                            </div>
+                            <h4 class="fw-bold text-white">Web Calculator</h4>
+                            <p class="text-secondary">A functional web-based calculator with a clean and responsive user interface.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="https://github.com/aksharpatel007/calculator" target="_blank" class="project-link">View Code <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="text-center mt-5">
+                <a href="https://github.com/aksharpatel007?tab=repositories" target="_blank" class="btn btn-outline-glow btn-lg">
+                    View All Projects <i class="fab fa-github ms-2"></i>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -495,7 +490,7 @@
             // IMPORTANT: PASTE YOUR FORMSPREE ID BELOW
             // Example: const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xqkrpzv';
             // -----------------------------------------------------------------
-            const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwverzpq'; 
+            const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xwverzpq';
 
             if (FORMSPREE_ENDPOINT.includes('PASTE_YOUR')) {
                 alert('ERROR: You forgot to paste your Formspree ID in the index.html code!');
